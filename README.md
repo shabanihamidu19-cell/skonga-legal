@@ -1,84 +1,29 @@
-# SKONGA AI — Legal Center
+# SKONGA AI Legal Center
 
-Static **Terms & Privacy** (English + Kiswahili).
+Static legal website for SKONGA AI.
 
-**Repo:** https://github.com/shabanihamidu19-cell/skonga-legal  
-**App repo stays separate:** `skonga-prod` / `skonga-ai-v1` (do not mix).
+## Pages
 
----
+- `index.html` — Legal Center
+- `terms.html` — Terms & Conditions (English)
+- `privacy.html` — Privacy Policy (English)
+- `terms-sw.html` — Masharti na Vigezo (Kiswahili)
+- `privacy-sw.html` — Sera ya Faragha (Kiswahili)
+- `assets/skonga-logo.png` — SKONGA AI logo
 
-## 1. Put the pages in this repo (Termux)
+## Before deployment
 
-```bash
-cd ~
-git clone https://github.com/shabanihamidu19-cell/skonga-legal.git
-cd skonga-legal
+Replace all placeholders such as:
 
-# Use YOUR path to the zip
-unzip -o /sdcard/Download/skonga-legal.zip -d /tmp/sklegal
+- `[DATE]`
+- `[CONTACT EMAIL]`
+- `[PRIVACY EMAIL]`
+- `[WEBSITE URL]`
+- `[INSERT ACTUAL PROVIDERS]`
+- `[RETENTION PERIOD]`
 
-if [ -d /tmp/sklegal/skonga-legal ]; then
-  cp -r /tmp/sklegal/skonga-legal/* .
-else
-  cp -r /tmp/sklegal/* .
-fi
+The Privacy Policy must match the actual SKONGA AI backend, AI providers, storage, analytics, logging, and retention behavior.
 
-ls -la
-# expect: index.html terms.html privacy.html terms-sw.html privacy-sw.html assets/
+## Deployment
 
-git add -A
-git commit -m "Add Terms and Privacy pages"
-git push origin main
-```
-
----
-
-## 2. Deploy with GitHub Pages (free HTTPS)
-
-1. Open: https://github.com/shabanihamidu19-cell/skonga-legal/settings/pages  
-2. **Source:** Deploy from a branch  
-3. **Branch:** `main`  
-4. **Folder:** `/ (root)`  
-5. **Save**
-
-Wait 1–2 minutes, then open:
-
-| Page | URL |
-|------|-----|
-| Legal hub | https://shabanihamidu19-cell.github.io/skonga-legal/ |
-| Terms (EN) | https://shabanihamidu19-cell.github.io/skonga-legal/terms.html |
-| Privacy (EN) | https://shabanihamidu19-cell.github.io/skonga-legal/privacy.html |
-| Terms (SW) | https://shabanihamidu19-cell.github.io/skonga-legal/terms-sw.html |
-| Privacy (SW) | https://shabanihamidu19-cell.github.io/skonga-legal/privacy-sw.html |
-
----
-
-## 3. Link from the app
-
-In `skonga-prod` → `www/index.html`, set:
-
-```js
-const EXTERNAL_LEGAL = {
-  terms: 'https://shabanihamidu19-cell.github.io/skonga-legal/terms.html',
-  privacy: 'https://shabanihamidu19-cell.github.io/skonga-legal/privacy.html'
-};
-```
-
-Play Console / store listing → Privacy policy URL = the privacy.html link above.
-
----
-
-## 4. Optional: custom domain
-
-Pages → Custom domain → e.g. `legal.skonga.ai` (DNS CNAME to `shabanihamidu19-cell.github.io`).
-
----
-
-## Files
-
-- `index.html` — hub
-- `terms.html` / `privacy.html` — English
-- `terms-sw.html` / `privacy-sw.html` — Kiswahili
-- `assets/skonga-logo.png`
-
-Before public launch, confirm emails and provider names match your live backend.
+This is a static HTML site and can be deployed on Vercel, Netlify, Cloudflare Pages, or GitHub Pages.

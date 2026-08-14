@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="SKONGA AI Masharti na Vigezo">
+<title>SKONGA AI — Masharti na Vigezo</title>
+<style>
+:root{
+  --bg:#07111f;
+  --surface:#0d1a2b;
+  --surface-2:#12233a;
+  --text:#edf5ff;
+  --muted:#9eb0c7;
+  --line:rgba(255,255,255,.09);
+  --accent:#27d3a2;
+  --accent-2:#4da3ff;
+  --danger:#ff6b7a;
+  --max:1040px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 15% -10%,rgba(39,211,162,.12),transparent 32rem),
+    radial-gradient(circle at 90% 0%,rgba(77,163,255,.12),transparent 28rem),
+    var(--bg);
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.72;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{width:min(calc(100% - 32px),var(--max));margin:auto}
+.header{
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:blur(18px);
+  background:rgba(7,17,31,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);font-weight:800}
+.brand img{width:42px;height:42px;border-radius:12px}
+.brand small{display:block;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.navlinks{display:flex;gap:8px;flex-wrap:wrap}
+.navlinks a,.lang{
+  color:var(--muted);padding:8px 12px;border-radius:10px;font-size:14px;font-weight:700
+}
+.navlinks a:hover,.lang:hover{background:var(--surface-2);color:var(--text);text-decoration:none}
+.hero{padding:74px 0 44px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase
+}
+.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(38px,7vw,66px);line-height:1.03;letter-spacing:-.045em;margin:18px 0}
+.hero p{max-width:760px;color:var(--muted);font-size:18px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.pill{border:1px solid var(--line);background:rgba(255,255,255,.035);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:38px;padding-bottom:80px}
+.toc{
+  position:sticky;top:96px;align-self:start;
+  background:rgba(13,26,43,.72);border:1px solid var(--line);border-radius:18px;padding:16px
+}
+.toc strong{display:block;margin:4px 8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.toc a{display:block;padding:7px 8px;color:var(--muted);font-size:13px;border-radius:8px}
+.toc a:hover{background:var(--surface-2);color:var(--text);text-decoration:none}
+article{
+  background:rgba(13,26,43,.66);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,5vw,46px)
+}
+h2{font-size:28px;line-height:1.2;margin:40px 0 12px;letter-spacing:-.02em}
+h2:first-child{margin-top:0}
+h3{font-size:19px;margin:26px 0 8px}
+p,li{color:#c9d6e6}
+ul{padding-left:22px}
+.notice{
+  border-left:3px solid var(--accent);background:rgba(39,211,162,.06);
+  padding:15px 18px;border-radius:0 12px 12px 0;margin:22px 0
+}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){
+  .nav{min-height:64px}.navlinks a:nth-child(3){display:none}
+  .layout{grid-template-columns:1fr}.toc{position:relative;top:auto}
+  .hero{padding-top:52px}
+}
+@media(max-width:520px){
+  .container{width:min(calc(100% - 22px),var(--max))}
+  .navlinks{display:none}
+  article{border-radius:16px;padding:22px 18px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="SKONGA AI home">
+      <img src="assets/skonga-logo.png" alt="SKONGA AI logo">
+      <span>SKONGA AI<small>Legal Center</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Legal navigation">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Kiswahili</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+<section class="hero">
+  <span class="eyebrow">SKONGA AI • Legal</span>
+  <h1>Masharti na Vigezo</h1>
+  <p>Masharti yanayoongoza matumizi salama na yenye uwajibikaji ya SKONGA AI.</p>
+  <div class="meta">
+    <span class="pill">Effective Date: [DATE]</span>
+    <span class="pill">Last Updated: [DATE]</span>
+  </div>
+</section>
+<div class="layout">
+  <aside class="toc">
+    <strong>On this page</strong>
+    <a href="#madhumuni">Madhumuni</a><a href="#usahihi">Usahihi wa AI</a><a href="#matumizi">Matumizi</a><a href="#maudhui">Maudhui</a><a href="#hakimiliki">Hakimiliki</a><a href="#picha">Picha</a><a href="#uadilifu">Uadilifu</a><a href="#miliki">Haki za Miliki</a><a href="#wahusika">Wahusika Wengine</a><a href="#upatikanaji">Upatikanaji</a><a href="#akaunti">Akaunti</a><a href="#dhima">Dhima</a><a href="#faragha">Faragha</a><a href="#sheria">Sheria</a><a href="#mabadiliko">Mabadiliko</a><a href="#mawasiliano">Mawasiliano</a>
+  </aside>
+  <article>
+    
+<h2 id="madhumuni">1. Madhumuni ya Kielimu</h2>
+<p>SKONGA AI ni programu ya akili bandia inayolenga kusaidia wanafunzi na wanaojifunza katika kusoma, kupata maelezo, kutatua matatizo, kufanya marudio, kutengeneza notes, kujifunza kupitia nyaraka na picha, pamoja na shughuli nyingine za kielimu.</p>
+<div class="notice"><strong>Muhimu:</strong> SKONGA AI ni chombo cha msaada. Si shule, chuo kikuu, mamlaka ya mitihani, publisher wa vitabu, mwalimu, mhadhiri, mwanasheria, daktari, au mamlaka nyingine ya kitaalamu.</div>
+
+<h2 id="usahihi">2. Mapungufu ya AI na Usahihi</h2>
+<p>AI inaweza kutoa taarifa zisizo sahihi, zisizokamilika, zilizopitwa na wakati, zinazopotosha, au zisizofaa. SKONGA AI haihakikishi kwamba kila jibu ni sahihi. Mtumiaji anapaswa kuthibitisha taarifa muhimu na kushauriana na walimu, wataalamu, vyanzo rasmi, au nyenzo halali za kielimu inapohitajika.</p>
+
+<h2 id="matumizi">3. Matumizi Yanayowajibika na Yaliyokatazwa</h2>
+<p>Unakubali kutumia SKONGA AI kwa uwajibikaji na kwa kufuata sheria. Huruhusiwi kutumia huduma kukiuka sheria, haki za miliki, faragha ya mtu mwingine, kujifanya mtu au taasisi nyingine, kutengeneza udanganyifu, kuwezesha unyanyasaji au vitisho, kupata access isiyoidhinishwa, kuvuruga huduma, kukwepa security controls, au kupakia maudhui ambayo huna haki ya kuyachakata.</p>
+
+<h2 id="maudhui">4. Maudhui ya Mtumiaji</h2>
+<p>Wewe unawajibika kwa prompts, maswali, maandishi, picha, documents, files, feedback, na maudhui mengine unayowasilisha. Unathibitisha kuwa una haki, ruhusa, au msingi halali wa kisheria wa kuwasilisha na kuchakata maudhui hayo.</p>
+
+<h2 id="hakimiliki">5. Hakimiliki na Vitabu vya Kielimu</h2>
+<p>SKONGA AI inaheshimu haki za miliki. Hatujidai kuwa tunamiliki textbooks, vitabu, nyenzo za mitihani, machapisho, trademarks, logos, au kazi nyingine zenye hakimiliki zinazomilikiwa na wahusika wengine.</p>
+<p>Isipokuwa imeelezwa wazi, SKONGA AI haihusiani rasmi, haidhaminiwi, haijaidhinishwa, wala si mwakilishi rasmi wa publisher wa kitabu, taasisi ya elimu, mamlaka ya mitihani, taasisi ya serikali, au shirika jingine la tatu.</p>
+<p>SKONGA AI hailengi kuwasilisha machapisho yenye hakimiliki ya wahusika wengine kama kazi asilia ya SKONGA AI. Watumiaji hawaruhusiwi kutumia huduma kunakili, kusambaza, kuchapisha, au kutumia kazi zenye hakimiliki kinyume cha sheria.</p>
+
+<h2 id="picha">6. Utengenezaji wa Picha za Kielimu</h2>
+<p>Iwapo image-generation features zinapatikana, zinalenga hasa matumizi halali ya kielimu kama michoro, illustrations za kisayansi, graphs, ramani, infographics, flowcharts, mind maps, illustrations za kihistoria, na learning posters.</p>
+<p>Picha zinazotengenezwa zinaweza kuwa na makosa ya kisayansi, kihistoria au ya kuona. Mtumiaji anawajibika kwa matumizi yake.</p>
+
+<h2 id="uadilifu">7. Uadilifu wa Kielimu</h2>
+<p>SKONGA AI imekusudiwa kusaidia kujifunza, si kukiuka uadilifu wa kielimu. Mtumiaji anawajibika kufuata kanuni za shule, chuo, university, mamlaka ya mitihani, mwalimu, au taasisi yake ya elimu. SKONGA AI haihakikishi kwamba kazi iliyotengenezwa na AI itakubaliwa na taasisi yoyote.</p>
+
+<h2 id="miliki">8. Haki za Miliki za SKONGA AI</h2>
+<p>Isipokuwa kwa haki za mtumiaji au wahusika wengine, software, interface, branding, logos, documentation, design elements, na kazi nyingine asilia za SKONGA AI zinamilikiwa au zimeruhusiwa kutumiwa na SKONGA AI na zinaweza kulindwa na sheria za haki za miliki.</p>
+
+<h2 id="wahusika">9. Huduma za Wahusika Wengine</h2>
+<p>SKONGA AI inaweza kutegemea AI providers, cloud infrastructure, hosting, storage, authentication, analytics, au huduma nyingine za kiteknolojia. Taarifa zinazohitajika zinaweza kuchakatwa na watoa huduma hao ili kutoa functionality uliyoomba. Angalia Privacy Policy kwa maelezo zaidi.</p>
+
+<h2 id="upatikanaji">10. Upatikanaji na Mabadiliko</h2>
+<p>Tunajitahidi kuweka SKONGA AI ikifanya kazi, lakini hatuhakikishi huduma isiyokatika. Maintenance, updates, technical failures, matatizo ya infrastructure, third-party outages, network problems, security incidents, au sababu zilizo nje ya uwezo wetu zinaweza kuathiri upatikanaji.</p>
+
+<h2 id="akaunti">11. Akaunti, Kusimamisha na Kukomesha Matumizi</h2>
+<p>Iwapo accounts zinatolewa, mtumiaji anawajibika kulinda credentials zake. Tunaweza kusimamisha au kukomesha access pale inapohitajika kutokana na ukiukaji mkubwa, hatari ya kisheria au kiusalama, matumizi mabaya, majaribio ya access isiyoidhinishwa, matakwa ya sheria, au kulinda watumiaji na watu wengine.</p>
+
+<h2 id="dhima">12. Dhamana na Kikomo cha Dhima</h2>
+<p>Kwa kiwango kinachoruhusiwa na sheria, SKONGA AI hutolewa kwa hali ya “as available” na “as is”. Hatudhamini upatikanaji usiokatika, usahihi kamili, kufaa kwa kila matumizi, au kutokuwepo kwa errors.</p>
+<p>Kwa kiwango kinachoruhusiwa na sheria, SKONGA AI na watengenezaji wake hawatawajibika kwa hasara zisizo za moja kwa moja, za bahati mbaya, maalum, zinazofuata, au zisizotarajiwa zinazotokana na matumizi ya huduma, isipokuwa pale ambapo sheria hairuhusu dhima hiyo kuondolewa au kupunguzwa.</p>
+
+<h2 id="faragha">13. Faragha</h2>
+<p>Matumizi yako ya SKONGA AI pia yanaongozwa na <a href="privacy-sw.html">Sera yetu ya Faragha</a>, inayofafanua namna taarifa binafsi zinaweza kukusanywa, kutumiwa, kuhifadhiwa, kushirikishwa, na kulindwa.</p>
+
+<h2 id="sheria">14. Sheria Inayotumika</h2>
+<p>Masharti haya yatafasiriwa kwa mujibu wa sheria zinazotumika za Jamhuri ya Muungano wa Tanzania, kwa kuzingatia haki au ulinzi wa lazima unaomlinda mtumiaji chini ya sheria. Pale ambapo sheria inaruhusu, migogoro itashughulikiwa na mahakama yenye mamlaka nchini Tanzania.</p>
+
+<h2 id="mabadiliko">15. Mabadiliko ya Masharti</h2>
+<p>Tunaweza kusasisha Masharti haya mara kwa mara. Mabadiliko makubwa yanaweza kutangazwa kupitia SKONGA AI au njia nyingine inayofaa. Version iliyosasishwa itaanza kutumika kwenye tarehe iliyoonyeshwa juu ya hati.</p>
+
+<h2 id="mawasiliano">16. Mawasiliano</h2>
+<p><strong>SKONGA AI</strong><br>Email: [CONTACT EMAIL]<br>Website: [WEBSITE URL]</p>
+
+  </article>
+</div>
+</main>
+<footer>
+  <div class="container footer-row">
+    <span>© 2026 SKONGA AI. All rights reserved.</span>
+    <span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span>
+  </div>
+</footer>
+</body>
+</html>

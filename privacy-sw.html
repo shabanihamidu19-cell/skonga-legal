@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="SKONGA AI Sera ya Faragha">
+<title>SKONGA AI — Sera ya Faragha</title>
+<style>
+:root{
+  --bg:#07111f;
+  --surface:#0d1a2b;
+  --surface-2:#12233a;
+  --text:#edf5ff;
+  --muted:#9eb0c7;
+  --line:rgba(255,255,255,.09);
+  --accent:#27d3a2;
+  --accent-2:#4da3ff;
+  --danger:#ff6b7a;
+  --max:1040px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 15% -10%,rgba(39,211,162,.12),transparent 32rem),
+    radial-gradient(circle at 90% 0%,rgba(77,163,255,.12),transparent 28rem),
+    var(--bg);
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.72;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{width:min(calc(100% - 32px),var(--max));margin:auto}
+.header{
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:blur(18px);
+  background:rgba(7,17,31,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);font-weight:800}
+.brand img{width:42px;height:42px;border-radius:12px}
+.brand small{display:block;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.navlinks{display:flex;gap:8px;flex-wrap:wrap}
+.navlinks a,.lang{
+  color:var(--muted);padding:8px 12px;border-radius:10px;font-size:14px;font-weight:700
+}
+.navlinks a:hover,.lang:hover{background:var(--surface-2);color:var(--text);text-decoration:none}
+.hero{padding:74px 0 44px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase
+}
+.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(38px,7vw,66px);line-height:1.03;letter-spacing:-.045em;margin:18px 0}
+.hero p{max-width:760px;color:var(--muted);font-size:18px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.pill{border:1px solid var(--line);background:rgba(255,255,255,.035);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:38px;padding-bottom:80px}
+.toc{
+  position:sticky;top:96px;align-self:start;
+  background:rgba(13,26,43,.72);border:1px solid var(--line);border-radius:18px;padding:16px
+}
+.toc strong{display:block;margin:4px 8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.toc a{display:block;padding:7px 8px;color:var(--muted);font-size:13px;border-radius:8px}
+.toc a:hover{background:var(--surface-2);color:var(--text);text-decoration:none}
+article{
+  background:rgba(13,26,43,.66);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,5vw,46px)
+}
+h2{font-size:28px;line-height:1.2;margin:40px 0 12px;letter-spacing:-.02em}
+h2:first-child{margin-top:0}
+h3{font-size:19px;margin:26px 0 8px}
+p,li{color:#c9d6e6}
+ul{padding-left:22px}
+.notice{
+  border-left:3px solid var(--accent);background:rgba(39,211,162,.06);
+  padding:15px 18px;border-radius:0 12px 12px 0;margin:22px 0
+}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){
+  .nav{min-height:64px}.navlinks a:nth-child(3){display:none}
+  .layout{grid-template-columns:1fr}.toc{position:relative;top:auto}
+  .hero{padding-top:52px}
+}
+@media(max-width:520px){
+  .container{width:min(calc(100% - 22px),var(--max))}
+  .navlinks{display:none}
+  article{border-radius:16px;padding:22px 18px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="SKONGA AI home">
+      <img src="assets/skonga-logo.png" alt="SKONGA AI logo">
+      <span>SKONGA AI<small>Legal Center</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Legal navigation">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="privacy.html">Kiswahili</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+<section class="hero">
+  <span class="eyebrow">SKONGA AI • Legal</span>
+  <h1>Sera ya Faragha</h1>
+  <p>Jinsi SKONGA AI inaweza kukusanya, kutumia, kuchakata, kuhifadhi, na kulinda taarifa.</p>
+  <div class="meta">
+    <span class="pill">Effective Date: [DATE]</span>
+    <span class="pill">Last Updated: [DATE]</span>
+  </div>
+</section>
+<div class="layout">
+  <aside class="toc">
+    <strong>On this page</strong>
+    <a href="#ukusanyaji">Taarifa Tunazokusanya</a><a href="#matumizi">Matumizi</a><a href="#uchakataji-ai">AI Processing</a><a href="#watoa-huduma">Watoa Huduma</a><a href="#kushirikisha">Kushirikisha</a><a href="#uploads">Uploads</a><a href="#wanafunzi">Wanafunzi</a><a href="#msingi">Msingi wa Kisheria</a><a href="#uhifadhi">Uhifadhi</a><a href="#usalama">Usalama</a><a href="#uhamishaji">Uhamishaji</a><a href="#haki">Haki Zako</a><a href="#ufutaji">Ufutaji</a><a href="#watoto">Watoto</a><a href="#links">Third-Party Links</a><a href="#mabadiliko">Mabadiliko</a><a href="#mawasiliano">Mawasiliano</a>
+  </aside>
+  <article>
+    
+<h2 id="ukusanyaji">1. Taarifa Tunazoweza Kukusanya</h2>
+<p>Kulingana na features unazotumia, SKONGA AI inaweza kuchakata taarifa za account, prompts, maswali, mazungumzo, maandishi, picha, documents, files, notes, feedback, na technical information kama aina ya kifaa, operating system, IP address, timestamps, diagnostic information, na service usage information pale zinapowezeshwa kweli.</p>
+<p>Usiwasilishe taarifa nyeti au za siri isipokuwa kama ni muhimu na una ruhusa au msingi halali wa kisheria.</p>
+
+<h2 id="matumizi">2. Jinsi Tunavyotumia Taarifa</h2>
+<p>Tunaweza kutumia taarifa kuendesha SKONGA AI, kuchakata maombi, kutoa majibu ya AI, kuchanganua picha au documents, kutengeneza educational content, kusimamia accounts, kutoa support, kuboresha reliability na security, kugundua abuse au fraud, kutatua technical issues, kutekeleza wajibu wa kisheria, kutuma taarifa muhimu, na kuboresha bidhaa pale ambapo sheria inaruhusu.</p>
+
+<h2 id="uchakataji-ai">3. Uchakataji wa AI</h2>
+<p>SKONGA AI inaweza kutumia AI models au third-party AI infrastructure. Unapotuma maudhui yanayohitaji AI processing, taarifa muhimu zinaweza kutumwa kwa AI provider au infrastructure inayohitajika ili kutoa jibu.</p>
+<div class="notice"><strong>Kabla ya kuchapisha:</strong> Badilisha placeholder hapa chini kwa providers halisi zinazotumiwa na SKONGA AI live system.</div>
+<p><strong>AI providers zinazotumika sasa:</strong> [WEKA PROVIDERS HALISI]</p>
+
+<h2 id="watoa-huduma">4. Watoa Huduma wa Wahusika Wengine</h2>
+<p>Tunaweza kutumia third-party providers kwa AI processing, cloud hosting, databases, storage, authentication, analytics, monitoring, communications, security, au payment processing pale inapohusika.</p>
+<p><strong>Providers wanaotumika sasa:</strong> [WEKA PROVIDERS HALISI]</p>
+
+<h2 id="kushirikisha">5. Kushirikisha Taarifa</h2>
+<p>Hatukusudii kuuza personal information kwa third parties. Taarifa zinaweza kushirikishwa pale inapohitajika kutoa huduma, kufanya kazi na service providers, kulinda security, kuzuia fraud au abuse, kutekeleza sheria, kulinda watumiaji na wengine, au kukamilisha transaction halali ya kampuni kama merger au acquisition.</p>
+
+<h2 id="uploads">6. Picha na Documents Zinazopakiwa</h2>
+<p>Picha, documents, screenshots, PDFs, na files nyingine zinaweza kuchakatwa ili kutoa feature uliyoomba. Ni jukumu lako kuhakikisha una haki ya kupakia na kuchakata material hiyo.</p>
+<p>Usipakie documents za siri bila ruhusa, personal information ya mtu mwingine bila msingi halali, copyrighted material ambayo matumizi yake si halali, passwords, authentication secrets, au payment credentials isipokuwa pale inapohitajika na kulindwa ipasavyo.</p>
+
+<h2 id="wanafunzi">7. Taarifa za Kielimu na Wanafunzi</h2>
+<p>SKONGA AI imekusudiwa kutumika katika elimu na inaweza kutumiwa na wanafunzi. Tunawahimiza watumiaji, shule, wazazi, walezi, na waelimishaji kuepuka kuwasilisha taarifa binafsi au nyeti za wanafunzi ambazo si muhimu. Pale taarifa za watoto au wanafunzi zinapochakatwa, ulinzi unaotakiwa na sheria utatumika.</p>
+
+<h2 id="msingi">8. Msingi wa Kisheria wa Uchakataji</h2>
+<p>Pale inapohusika, personal information itachakatwa kwa msingi halali unaotambuliwa na sheria za ulinzi wa data. Hii inaweza kujumuisha consent, kutoa huduma iliyoombwa, kutekeleza wajibu wa kisheria, legitimate interests pale sheria inaruhusu, kulinda maslahi muhimu, au msingi mwingine halali.</p>
+
+<h2 id="uhifadhi">9. Muda wa Kuhifadhi Data</h2>
+<p>Tutahifadhi taarifa kwa muda unaohitajika kwa madhumuni yaliyoelezwa katika Sera hii, isipokuwa kama muda mrefu zaidi unahitajika au unaruhusiwa na sheria.</p>
+<ul>
+<li>Account data: [MUDA]</li>
+<li>Chat/conversation data: [MUDA]</li>
+<li>Uploaded files/images: [MUDA]</li>
+<li>Logs/security records: [MUDA]</li>
+<li>Deleted-account data: [MUDA]</li>
+</ul>
+
+<h2 id="usalama">10. Usalama wa Data</h2>
+<p>Tunatumia hatua zinazofaa za kiufundi na kiutawala zinazolenga kulinda taarifa dhidi ya access isiyoidhinishwa, kupotea, matumizi mabaya, kubadilishwa, au kufichuliwa. Hata hivyo, hakuna mfumo wa internet unaoweza kuhakikishiwa kuwa salama kabisa.</p>
+
+<h2 id="uhamishaji">11. Uhamishaji wa Data Nje ya Tanzania</h2>
+<p>Baadhi ya infrastructure au service providers wa SKONGA AI wanaweza kuchakata taarifa nje ya Tanzania. Pale personal information inapohamishwa kuvuka mipaka, tutalenga kufuata mahitaji ya kisheria yanayotumika kuhusu uhamishaji huo.</p>
+
+<h2 id="haki">12. Haki Zako Kuhusu Taarifa Binafsi</h2>
+<p>Kwa kuzingatia sheria zinazotumika, unaweza kuwa na haki ya kuomba access, correction, deletion pale inapowezekana, withdrawal ya consent, kupinga processing fulani, kuomba restriction pale inapohusika, na kuwasilisha malalamiko kuhusu namna taarifa zako zinavyoshughulikiwa.</p>
+<p><strong>Privacy Contact:</strong> [PRIVACY EMAIL]</p>
+
+<h2 id="ufutaji">13. Kufuta Akaunti</h2>
+<p>Iwapo account functionality ipo, unaweza kuomba account yako na personal information inayohusiana nayo ifutwe kwa kuwasiliana na [PRIVACY EMAIL]. Baadhi ya taarifa zinaweza kubaki pale zinapohitajika kisheria au kwa security, dispute resolution, fraud prevention, au madhumuni mengine halali.</p>
+
+<h2 id="watoto">14. Faragha ya Watoto</h2>
+<p>SKONGA AI hailengi kukusanya unnecessary personal information kutoka kwa watoto. Pale sheria inahitaji parental au guardian consent, utaratibu unaofaa lazima ufuatwe. Ikiwa unaamini mtoto ametoa personal information katika mazingira ambayo haikupaswa kukusanywa, wasiliana na [PRIVACY EMAIL].</p>
+
+<h2 id="links">15. Links za Third-Party</h2>
+<p>SKONGA AI inaweza kuwa na links za websites au services za nje. Hatuwajibiki kwa privacy practices, security, au content ya websites hizo. Watumiaji wanapaswa kusoma privacy policies za third-party services kabla ya kutoa personal information.</p>
+
+<h2 id="mabadiliko">16. Mabadiliko ya Sera hii</h2>
+<p>Tunaweza kusasisha Sera hii ya Faragha mara kwa mara. Mabadiliko makubwa yanaweza kutangazwa kupitia application, website, au njia nyingine inayofaa. Version mpya itaonyesha tarehe mpya ya “Imesasishwa Mwisho.”</p>
+
+<h2 id="mawasiliano">17. Mawasiliano</h2>
+<p><strong>SKONGA AI</strong><br>Privacy Email: [PRIVACY EMAIL]<br>General Email: [CONTACT EMAIL]<br>Website: [WEBSITE URL]</p>
+
+  </article>
+</div>
+</main>
+<footer>
+  <div class="container footer-row">
+    <span>© 2026 SKONGA AI. All rights reserved.</span>
+    <span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span>
+  </div>
+</footer>
+</body>
+</html>

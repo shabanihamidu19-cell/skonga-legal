@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="SKONGA AI Terms & Conditions">
+<title>SKONGA AI — Terms & Conditions</title>
+<style>
+:root{
+  --bg:#07111f;
+  --surface:#0d1a2b;
+  --surface-2:#12233a;
+  --text:#edf5ff;
+  --muted:#9eb0c7;
+  --line:rgba(255,255,255,.09);
+  --accent:#27d3a2;
+  --accent-2:#4da3ff;
+  --danger:#ff6b7a;
+  --max:1040px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 15% -10%,rgba(39,211,162,.12),transparent 32rem),
+    radial-gradient(circle at 90% 0%,rgba(77,163,255,.12),transparent 28rem),
+    var(--bg);
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.72;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{width:min(calc(100% - 32px),var(--max));margin:auto}
+.header{
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:blur(18px);
+  background:rgba(7,17,31,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);font-weight:800}
+.brand img{width:42px;height:42px;border-radius:12px}
+.brand small{display:block;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.navlinks{display:flex;gap:8px;flex-wrap:wrap}
+.navlinks a,.lang{
+  color:var(--muted);padding:8px 12px;border-radius:10px;font-size:14px;font-weight:700
+}
+.navlinks a:hover,.lang:hover{background:var(--surface-2);color:var(--text);text-decoration:none}
+.hero{padding:74px 0 44px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase
+}
+.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(38px,7vw,66px);line-height:1.03;letter-spacing:-.045em;margin:18px 0}
+.hero p{max-width:760px;color:var(--muted);font-size:18px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.pill{border:1px solid var(--line);background:rgba(255,255,255,.035);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:38px;padding-bottom:80px}
+.toc{
+  position:sticky;top:96px;align-self:start;
+  background:rgba(13,26,43,.72);border:1px solid var(--line);border-radius:18px;padding:16px
+}
+.toc strong{display:block;margin:4px 8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.toc a{display:block;padding:7px 8px;color:var(--muted);font-size:13px;border-radius:8px}
+.toc a:hover{background:var(--surface-2);color:var(--text);text-decoration:none}
+article{
+  background:rgba(13,26,43,.66);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,5vw,46px)
+}
+h2{font-size:28px;line-height:1.2;margin:40px 0 12px;letter-spacing:-.02em}
+h2:first-child{margin-top:0}
+h3{font-size:19px;margin:26px 0 8px}
+p,li{color:#c9d6e6}
+ul{padding-left:22px}
+.notice{
+  border-left:3px solid var(--accent);background:rgba(39,211,162,.06);
+  padding:15px 18px;border-radius:0 12px 12px 0;margin:22px 0
+}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){
+  .nav{min-height:64px}.navlinks a:nth-child(3){display:none}
+  .layout{grid-template-columns:1fr}.toc{position:relative;top:auto}
+  .hero{padding-top:52px}
+}
+@media(max-width:520px){
+  .container{width:min(calc(100% - 22px),var(--max))}
+  .navlinks{display:none}
+  article{border-radius:16px;padding:22px 18px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="SKONGA AI home">
+      <img src="assets/skonga-logo.png" alt="SKONGA AI logo">
+      <span>SKONGA AI<small>Legal Center</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Legal navigation">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms-sw.html">Kiswahili</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+<section class="hero">
+  <span class="eyebrow">SKONGA AI • Legal</span>
+  <h1>Terms & Conditions</h1>
+  <p>Rules governing access to and responsible use of SKONGA AI.</p>
+  <div class="meta">
+    <span class="pill">Effective Date: [DATE]</span>
+    <span class="pill">Last Updated: [DATE]</span>
+  </div>
+</section>
+<div class="layout">
+  <aside class="toc">
+    <strong>On this page</strong>
+    <a href="#purpose">Educational Purpose</a><a href="#accuracy">AI Accuracy</a><a href="#acceptable-use">Responsible Use</a><a href="#content">User Content</a><a href="#copyright">Copyright</a><a href="#images">Image Generation</a><a href="#integrity">Academic Integrity</a><a href="#ownership">IP</a><a href="#third-party">Third Parties</a><a href="#availability">Availability</a><a href="#account">Accounts</a><a href="#liability">Liability</a><a href="#privacy">Privacy</a><a href="#law">Governing Law</a><a href="#changes">Changes</a><a href="#contact">Contact</a>
+  </aside>
+  <article>
+    
+<h2 id="purpose">1. Educational Purpose</h2>
+<p>SKONGA AI is an educational artificial-intelligence application designed to assist students and learners with studying, explanations, problem solving, revision, note generation, document and image-based learning, and other educational activities.</p>
+<div class="notice"><strong>Important:</strong> SKONGA AI is an assistance tool. It is not a school, university, examination authority, textbook publisher, teacher, lecturer, lawyer, doctor, or other professional authority.</div>
+
+<h2 id="accuracy">2. AI Limitations and Accuracy</h2>
+<p>Artificial intelligence can produce inaccurate, incomplete, outdated, misleading, or inappropriate information. SKONGA AI does not guarantee that every response is correct. Users should independently verify important information and should consult qualified teachers, professionals, official sources, or authoritative educational materials where appropriate.</p>
+
+<h2 id="acceptable-use">3. Responsible and Prohibited Use</h2>
+<p>You agree to use SKONGA AI responsibly and in accordance with applicable laws. You must not use the service to violate laws, infringe intellectual-property rights, violate another person's privacy, impersonate people or organisations, create fraudulent materials, facilitate abuse or threats, attempt unauthorised access, disrupt the service, bypass security or usage controls, or upload material you do not have the right to process.</p>
+
+<h2 id="content">4. User Content</h2>
+<p>You remain responsible for prompts, questions, text, images, documents, files, feedback, and other material you submit. You represent that you have the necessary rights, permissions, or lawful basis to submit and process such content.</p>
+
+<h2 id="copyright">5. Copyright and Educational Publications</h2>
+<p>SKONGA AI respects intellectual-property rights. We do not claim ownership of third-party textbooks, books, examination materials, publications, trademarks, logos, or other copyrighted works belonging to their respective owners.</p>
+<p>Unless expressly stated, SKONGA AI is not affiliated with, sponsored by, endorsed by, or officially associated with any particular textbook publisher, educational institution, examination authority, government education body, or other third-party organisation.</p>
+<p>SKONGA AI does not intentionally present third-party copyrighted publications as original SKONGA AI works. Users must not use the service to unlawfully reproduce, distribute, publish, or otherwise exploit copyrighted works.</p>
+
+<h2 id="images">6. Educational Image Generation</h2>
+<p>Where available, image-generation features are intended primarily for lawful educational purposes such as diagrams, scientific illustrations, mathematical graphs, maps, infographics, flowcharts, mind maps, historical illustrations, and learning posters.</p>
+<p>Generated images may contain factual or visual errors. Users remain responsible for how generated images are used.</p>
+
+<h2 id="integrity">7. Academic Integrity</h2>
+<p>SKONGA AI is intended to support learning rather than undermine academic integrity. Users are responsible for following the rules of their school, college, university, examination authority, teacher, or educational institution. SKONGA AI does not guarantee that AI-generated work will be accepted by any educational institution.</p>
+
+<h2 id="ownership">8. SKONGA AI Intellectual Property</h2>
+<p>Subject to rights belonging to users or third parties, SKONGA AI software, interface, branding, logos, original documentation, design elements, and other original materials are owned by or licensed to SKONGA AI and may be protected by applicable intellectual-property laws.</p>
+
+<h2 id="third-party">9. Third-Party Services</h2>
+<p>SKONGA AI may depend on third-party services such as AI providers, cloud infrastructure, hosting, storage, authentication, analytics, or other technology providers. Relevant information may be processed by those providers when required to deliver requested functionality. See the Privacy Policy for more information.</p>
+
+<h2 id="availability">10. Availability and Changes</h2>
+<p>We aim to keep SKONGA AI available but do not guarantee uninterrupted service. Maintenance, upgrades, technical failures, infrastructure problems, third-party outages, network problems, security incidents, or circumstances beyond our reasonable control may affect availability.</p>
+
+<h2 id="account">11. Accounts, Suspension and Termination</h2>
+<p>Where accounts are provided, users are responsible for protecting their credentials. We may suspend or terminate access where reasonably necessary because of material violations, security or legal risks, abuse, unauthorised access attempts, legal requirements, or the need to protect users and third parties.</p>
+
+<h2 id="liability">12. Disclaimer and Limitation of Liability</h2>
+<p>To the maximum extent permitted by applicable law, SKONGA AI is provided on an “as available” and “as is” basis. We do not guarantee uninterrupted availability, perfect accuracy, suitability for every purpose, or error-free operation.</p>
+<p>To the maximum extent permitted by applicable law, SKONGA AI and its developers will not be responsible for indirect, incidental, special, consequential, or unforeseeable losses arising from use of the service, except where liability cannot lawfully be excluded or limited.</p>
+
+<h2 id="privacy">13. Privacy</h2>
+<p>Your use of SKONGA AI is also governed by our <a href="privacy.html">Privacy Policy</a>, which explains how personal information may be collected, used, stored, shared, and protected.</p>
+
+<h2 id="law">14. Governing Law</h2>
+<p>These Terms shall be interpreted in accordance with the applicable laws of the United Republic of Tanzania, subject to mandatory rights or protections that apply to the user under applicable law. Where permitted by law, disputes shall be subject to the jurisdiction of competent courts in Tanzania.</p>
+
+<h2 id="changes">15. Changes to These Terms</h2>
+<p>We may update these Terms from time to time. Material changes may be communicated through SKONGA AI or another appropriate method. The updated version becomes effective on the date shown at the top of this document.</p>
+
+<h2 id="contact">16. Contact</h2>
+<p><strong>SKONGA AI</strong><br>Email: [CONTACT EMAIL]<br>Website: [WEBSITE URL]</p>
+
+  </article>
+</div>
+</main>
+<footer>
+  <div class="container footer-row">
+    <span>© 2026 SKONGA AI. All rights reserved.</span>
+    <span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="SKONGA AI Legal Center">
+<title>SKONGA AI — Legal Center</title>
+<style>
+:root{
+  --bg:#07111f;
+  --surface:#0d1a2b;
+  --surface-2:#12233a;
+  --text:#edf5ff;
+  --muted:#9eb0c7;
+  --line:rgba(255,255,255,.09);
+  --accent:#27d3a2;
+  --accent-2:#4da3ff;
+  --danger:#ff6b7a;
+  --max:1040px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 15% -10%,rgba(39,211,162,.12),transparent 32rem),
+    radial-gradient(circle at 90% 0%,rgba(77,163,255,.12),transparent 28rem),
+    var(--bg);
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.72;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{width:min(calc(100% - 32px),var(--max));margin:auto}
+.header{
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:blur(18px);
+  background:rgba(7,17,31,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);font-weight:800}
+.brand img{width:42px;height:42px;border-radius:12px}
+.brand small{display:block;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.navlinks{display:flex;gap:8px;flex-wrap:wrap}
+.navlinks a,.lang{
+  color:var(--muted);padding:8px 12px;border-radius:10px;font-size:14px;font-weight:700
+}
+.navlinks a:hover,.lang:hover{background:var(--surface-2);color:var(--text);text-decoration:none}
+.hero{padding:74px 0 44px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase
+}
+.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(38px,7vw,66px);line-height:1.03;letter-spacing:-.045em;margin:18px 0}
+.hero p{max-width:760px;color:var(--muted);font-size:18px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.pill{border:1px solid var(--line);background:rgba(255,255,255,.035);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:38px;padding-bottom:80px}
+.toc{
+  position:sticky;top:96px;align-self:start;
+  background:rgba(13,26,43,.72);border:1px solid var(--line);border-radius:18px;padding:16px
+}
+.toc strong{display:block;margin:4px 8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.toc a{display:block;padding:7px 8px;color:var(--muted);font-size:13px;border-radius:8px}
+.toc a:hover{background:var(--surface-2);color:var(--text);text-decoration:none}
+article{
+  background:rgba(13,26,43,.66);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,5vw,46px)
+}
+h2{font-size:28px;line-height:1.2;margin:40px 0 12px;letter-spacing:-.02em}
+h2:first-child{margin-top:0}
+h3{font-size:19px;margin:26px 0 8px}
+p,li{color:#c9d6e6}
+ul{padding-left:22px}
+.notice{
+  border-left:3px solid var(--accent);background:rgba(39,211,162,.06);
+  padding:15px 18px;border-radius:0 12px 12px 0;margin:22px 0
+}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){
+  .nav{min-height:64px}.navlinks a:nth-child(3){display:none}
+  .layout{grid-template-columns:1fr}.toc{position:relative;top:auto}
+  .hero{padding-top:52px}
+}
+@media(max-width:520px){
+  .container{width:min(calc(100% - 22px),var(--max))}
+  .navlinks{display:none}
+  article{border-radius:16px;padding:22px 18px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container nav">
+<a class="brand" href="index.html"><img src="assets/skonga-logo.png" alt="SKONGA AI logo"><span>SKONGA AI<small>Legal Center</small></span></a>
+<nav class="navlinks" aria-label="Legal navigation"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="terms-sw.html">Kiswahili</a></nav>
+</div>
+</header>
+<main class="container">
+<section class="hero">
+  <span class="eyebrow">SKONGA AI • Legal Center</span>
+  <h1>Trust, transparency & responsible AI.</h1>
+  <p>Review the legal documents governing SKONGA AI, including our Terms & Conditions and Privacy Policy. Choose English or Kiswahili.</p>
+</section>
+<div class="layout" style="grid-template-columns:1fr 1fr">
+  <article>
+    <h2>Terms & Conditions</h2>
+    <p>Rules for using SKONGA AI responsibly, including AI limitations, educational use, copyright, academic integrity, third-party services, and applicable law.</p>
+    <p><a href="terms.html">Read in English →</a></p>
+    <p><a href="terms-sw.html">Soma kwa Kiswahili →</a></p>
+  </article>
+  <article>
+    <h2>Privacy Policy</h2>
+    <p>Information about personal data, AI processing, uploaded content, third-party providers, retention, security, privacy rights, and Tanzania data-protection requirements.</p>
+    <p><a href="privacy.html">Read in English →</a></p>
+    <p><a href="privacy-sw.html">Soma kwa Kiswahili →</a></p>
+  </article>
+</div>
+</main>
+<footer><div class="container footer-row"><span>© 2026 SKONGA AI. All rights reserved.</span><span>English · Kiswahili</span></div></footer>
+</body>
+</html>
